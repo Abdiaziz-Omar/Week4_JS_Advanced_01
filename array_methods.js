@@ -71,3 +71,8 @@ console.log(largeShirts);
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations into a ticketPriceTotal variable and log the result
 
 console.log(ticketPriceTotal);
+
+const ticketPriceTotal = runners.reduce((acc, item) => {
+    return acc + item.donation
+}, 0)
+console.log(ticketPriceTotal)
